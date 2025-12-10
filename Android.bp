@@ -1,0 +1,23 @@
+// Copyright (C) 2025 Intel Corporation
+// Licensed under the Apache License, Version 2.0
+
+android_app {
+    name: "GLTimer",
+    srcs: ["app/src/main/java/**/*.java"],
+    manifest: "app/src/main/AndroidManifest.xml",
+    platform_apis: true,
+    certificate: "platform",
+    privileged: false,
+    
+    sdk_version: "current",
+    min_sdk_version: "29",
+    target_sdk_version: "34",
+    
+    optimize: {
+        enabled: false,
+    },
+    
+    dex_preopt: {
+        enabled: false,
+    },
+}
